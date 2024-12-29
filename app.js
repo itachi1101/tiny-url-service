@@ -8,10 +8,7 @@ env.config();
 const PORT = process.env.PORT 
 mongoose.set("strictQuery", true);
 try {
-   mongoose.connect(process.env.MONGO_URL, {
-    useUnifiedTopology : true   ,
-    useNewUrlParser: true
-   }) 
+   mongoose.connect(process.env.MONGO_URL, {}) 
    console.log("Connected to MongoDB");
 } catch (error) {
     console.log(`Error in connecting to MongoDB with error : ${error}`);
