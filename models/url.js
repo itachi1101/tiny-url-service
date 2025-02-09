@@ -6,7 +6,7 @@ const defaultExpiryTime = () =>{
     return now;
 }
 
-const ulrSchema = new mongoose.Schema ({
+const urlSchema =   mongoose.Schema ({
     originalUrl:{
         type : String,
         require: true,
@@ -25,5 +25,5 @@ const ulrSchema = new mongoose.Schema ({
 
 },{timestamps : true})
 
-const Urls = mongoose.model("Urls", ulrSchema);
-module.exports = ulrSchema;
+const UrlSchema = mongoose.model("UrlSchema", urlSchema);
+module.exports = UrlSchema;
